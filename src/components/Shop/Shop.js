@@ -44,7 +44,6 @@ const Shop = () => {
        const id =  Math.floor(Math.random() * 10) + 1;
     let web = product.id;
       web = id;
-    console.log(web);
 
         
     }
