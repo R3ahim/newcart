@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Cart from '../Cart/Cart';
+
 import Product from '../Product/Product';
 import './Shop.css'
 const Shop = () => {
@@ -16,7 +16,7 @@ const Shop = () => {
 
     // console.log(cart)
     const handleAddToCart = (selectedProduct) => {
-        const pd = products;
+     
 
         const find = products.find(product => product.id === selectedProduct);
 
@@ -30,9 +30,7 @@ const Shop = () => {
      <img src="${find.img}" alt=""/>
      <h4>${find.name}</h4>
   
-    <div>
-
-     </div>
+    
      
      `;
         id.appendChild(div)
