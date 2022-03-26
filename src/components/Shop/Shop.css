@@ -52,3 +52,7 @@ margin: 0;
    margin: 3px;
     
 }
+.btn-1:hover{
+    background-color:black;
+    color: white;
+}
