@@ -16,15 +16,38 @@ const Shop = () => {
 
 // console.log(cart)
     const handleAddToCart =(selectedProduct)=>{
-        //  console.log(selectedProduct);
-        const newCart = [];
+       
+        const find = products.find(product=>product.id===selectedProduct);
+  
+        // console.log(find);
+  console.log(find.img);
+     const id = document.getElementById('id') ;
+     const div = document.createElement('div');
+     div.classList.add('dy-cart')
+     div.innerHTML=`
      
-        const exist  = products.find(product=>product.id ===selectedProduct.id);
-       console.log(exist);
-        
+     <img src="${find.img}" alt=""/>
+     <h4>${find.name}</h4>
+  
+    <div>
+
+     </div>
+     
+     `;
+     id.appendChild(div)
 
         
+  setCart(find)
+        
     };
+    const choseAddToCurt= (product)=>{
+       const id =  Math.floor(Math.random() * 10) + 1;
+    let web = product.id;
+      web = id;
+    console.log(web);
+
+        
+    }
     // console.log(cart)
    
        
@@ -44,10 +67,19 @@ const Shop = () => {
                    }
             </div>
         <div className="cart-container">
-            <Cart
-           cart={cart}
-            
-            ></Cart>
+            <div id='id' >
+
+            </div>
+        
+
+        <div>
+            <div className='btn-tola'>
+
+        <button onClick={()=>choseAddToCurt(cart)} className='btn-1'> chose for one </button>
+        <br />
+        <button className='btn-1'>delter</button>
+       </div>
+        </div>
         </div>
         </div>
     );

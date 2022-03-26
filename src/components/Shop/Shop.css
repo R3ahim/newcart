@@ -1,6 +1,6 @@
 .shop-container{
     display: grid;
-    grid-template-columns: 4fr, 1fr;
+    grid-template-columns: 4fr 1fr;
 
 }
 .shop-container{
@@ -16,5 +16,39 @@
 
 }
 .cart-container{
+    width: 260px;
+    height: 350px;
+    background-color: lightpink;
+    border-radius: 20px;
+    border: 2px solid rgb(50, 246, 15);
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    padding: 20px;
+}
+.dy-cart {
+ display: flex;
+align-items: center;
+margin: 0;
+
+}
+.dy-cart img{
+    margin-right: 4px;
+    width: 50px;
+    height: 30px;
+}
+
+.btn-tola{
+    position: absolute;
+    bottom: 30px;
+  
+
+}
+.btn-1{
+    padding: 6px 30px;
+    border-radius: 7px;
+    font-size: 16px;
+   border: 1px solid;
+   margin: 3px;
     
 }
